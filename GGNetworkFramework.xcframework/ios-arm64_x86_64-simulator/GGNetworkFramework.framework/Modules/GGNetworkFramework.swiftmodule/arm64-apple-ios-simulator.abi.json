@@ -1,0 +1,2110 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSessionProtocol",
+        "printedName": "URLSessionProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(request:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18GGNetworkFramework18URLSessionProtocolP8dataTask7request17completionHandlerSo016NSURLSessionDataF0C10Foundation10URLRequestV_yAI0K0VSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s18GGNetworkFramework18URLSessionProtocolP8dataTask7request17completionHandlerSo016NSURLSessionDataF0C10Foundation10URLRequestV_yAI0K0VSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "GGNetworkFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.URLSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : GGNetworkFramework.URLSessionProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18GGNetworkFramework18URLSessionProtocolP",
+        "mangledName": "$s18GGNetworkFramework18URLSessionProtocolP",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Service",
+        "printedName": "Service",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18GGNetworkFramework7ServiceP7baseURL10Foundation0E0Vvp",
+            "mangledName": "$s18GGNetworkFramework7ServiceP7baseURL10Foundation0E0Vvp",
+            "moduleName": "GGNetworkFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework7ServiceP7baseURL10Foundation0E0Vvg",
+                "mangledName": "$s18GGNetworkFramework7ServiceP7baseURL10Foundation0E0Vvg",
+                "moduleName": "GGNetworkFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.Service>",
+                "sugared_genericSig": "<Self where Self : GGNetworkFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18GGNetworkFramework7ServiceP4pathSSvp",
+            "mangledName": "$s18GGNetworkFramework7ServiceP4pathSSvp",
+            "moduleName": "GGNetworkFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework7ServiceP4pathSSvg",
+                "mangledName": "$s18GGNetworkFramework7ServiceP4pathSSvg",
+                "moduleName": "GGNetworkFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.Service>",
+                "sugared_genericSig": "<Self where Self : GGNetworkFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "method",
+            "printedName": "method",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "GGNetworkFramework.HTTPMethod",
+                "usr": "s:18GGNetworkFramework10HTTPMethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18GGNetworkFramework7ServiceP6methodAA10HTTPMethodOvp",
+            "mangledName": "$s18GGNetworkFramework7ServiceP6methodAA10HTTPMethodOvp",
+            "moduleName": "GGNetworkFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "GGNetworkFramework.HTTPMethod",
+                    "usr": "s:18GGNetworkFramework10HTTPMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework7ServiceP6methodAA10HTTPMethodOvg",
+                "mangledName": "$s18GGNetworkFramework7ServiceP6methodAA10HTTPMethodOvg",
+                "moduleName": "GGNetworkFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.Service>",
+                "sugared_genericSig": "<Self where Self : GGNetworkFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]??",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18GGNetworkFramework7ServiceP7headersSDyS2SGSgSgvp",
+            "mangledName": "$s18GGNetworkFramework7ServiceP7headersSDyS2SGSgSgvp",
+            "moduleName": "GGNetworkFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]??",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Swift.String]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework7ServiceP7headersSDyS2SGSgSgvg",
+                "mangledName": "$s18GGNetworkFramework7ServiceP7headersSDyS2SGSgSgvg",
+                "moduleName": "GGNetworkFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.Service>",
+                "sugared_genericSig": "<Self where Self : GGNetworkFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parameters",
+            "printedName": "parameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18GGNetworkFramework7ServiceP10parametersSDySSypGSgvp",
+            "mangledName": "$s18GGNetworkFramework7ServiceP10parametersSDySSypGSgvp",
+            "moduleName": "GGNetworkFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework7ServiceP10parametersSDySSypGSgvg",
+                "mangledName": "$s18GGNetworkFramework7ServiceP10parametersSDySSypGSgvg",
+                "moduleName": "GGNetworkFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.Service>",
+                "sugared_genericSig": "<Self where Self : GGNetworkFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "urlQueryItems",
+            "printedName": "urlQueryItems",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.URLQueryItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URLQueryItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLQueryItem",
+                        "printedName": "Foundation.URLQueryItem",
+                        "usr": "s:10Foundation12URLQueryItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18GGNetworkFramework7ServiceP13urlQueryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "mangledName": "$s18GGNetworkFramework7ServiceP13urlQueryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "moduleName": "GGNetworkFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Foundation.URLQueryItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLQueryItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLQueryItem",
+                            "printedName": "Foundation.URLQueryItem",
+                            "usr": "s:10Foundation12URLQueryItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework7ServiceP13urlQueryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "mangledName": "$s18GGNetworkFramework7ServiceP13urlQueryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "moduleName": "GGNetworkFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.Service>",
+                "sugared_genericSig": "<Self where Self : GGNetworkFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mediaData",
+            "printedName": "mediaData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18GGNetworkFramework7ServiceP9mediaData10Foundation0E0VSgvp",
+            "mangledName": "$s18GGNetworkFramework7ServiceP9mediaData10Foundation0E0VSgvp",
+            "moduleName": "GGNetworkFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework7ServiceP9mediaData10Foundation0E0VSgvg",
+                "mangledName": "$s18GGNetworkFramework7ServiceP9mediaData10Foundation0E0VSgvg",
+                "moduleName": "GGNetworkFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.Service>",
+                "sugared_genericSig": "<Self where Self : GGNetworkFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework7ServiceP9mediaData10Foundation0E0VSgvs",
+                "mangledName": "$s18GGNetworkFramework7ServiceP9mediaData10Foundation0E0VSgvs",
+                "moduleName": "GGNetworkFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.Service>",
+                "sugared_genericSig": "<Self where Self : GGNetworkFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework7ServiceP9mediaData10Foundation0E0VSgvM",
+                "mangledName": "$s18GGNetworkFramework7ServiceP9mediaData10Foundation0E0VSgvM",
+                "moduleName": "GGNetworkFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : GGNetworkFramework.Service>",
+                "sugared_genericSig": "<Self where Self : GGNetworkFramework.Service>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18GGNetworkFramework7ServiceP",
+        "mangledName": "$s18GGNetworkFramework7ServiceP",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIManager",
+        "printedName": "APIManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(session:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIManager",
+                "printedName": "GGNetworkFramework.APIManager",
+                "usr": "s:18GGNetworkFramework10APIManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSession"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18GGNetworkFramework10APIManagerC7sessionACSo12NSURLSessionC_tcfc",
+            "mangledName": "$s18GGNetworkFramework10APIManagerC7sessionACSo12NSURLSessionC_tcfc",
+            "moduleName": "GGNetworkFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sessionConfiguration:pinnedCertificateHash:pinnedPublicKeyHash:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIManager",
+                "printedName": "GGNetworkFramework.APIManager",
+                "usr": "s:18GGNetworkFramework10APIManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18GGNetworkFramework10APIManagerC20sessionConfiguration21pinnedCertificateHash0f9PublicKeyH0ACSo012NSURLSessionE0C_SSSgAItcfc",
+            "mangledName": "$s18GGNetworkFramework10APIManagerC20sessionConfiguration21pinnedCertificateHash0f9PublicKeyH0ACSo012NSURLSessionE0C_SSSgAItcfc",
+            "moduleName": "GGNetworkFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(service:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Service",
+                "printedName": "GGNetworkFramework.Service",
+                "usr": "s:18GGNetworkFramework7ServiceP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.HTTPURLResponse?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.HTTPURLResponse?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.HTTPURLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "HTTPURLResponse",
+                            "printedName": "Foundation.HTTPURLResponse",
+                            "usr": "c:objc(cs)NSHTTPURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18GGNetworkFramework10APIManagerC7request7service10completionyAA7Service_p_y10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s18GGNetworkFramework10APIManagerC7request7service10completionyAA7Service_p_y10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "GGNetworkFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestData",
+            "printedName": "requestData(service:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Service",
+                "printedName": "GGNetworkFramework.Service",
+                "usr": "s:18GGNetworkFramework7ServiceP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?, Foundation.Data?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Any?, Foundation.Data?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18GGNetworkFramework10APIManagerC11requestData7service10completionyAA7Service_p_yypSg_10Foundation0E0VSgs5Error_pSgtctF",
+            "mangledName": "$s18GGNetworkFramework10APIManagerC11requestData7service10completionyAA7Service_p_yypSg_10Foundation0E0VSgs5Error_pSgtctF",
+            "moduleName": "GGNetworkFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18GGNetworkFramework10APIManagerC",
+        "mangledName": "$s18GGNetworkFramework10APIManagerC",
+        "moduleName": "GGNetworkFramework",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPMethod",
+        "printedName": "HTTPMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "post",
+            "printedName": "post",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GGNetworkFramework.HTTPMethod.Type) -> GGNetworkFramework.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "GGNetworkFramework.HTTPMethod",
+                    "usr": "s:18GGNetworkFramework10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GGNetworkFramework.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "GGNetworkFramework.HTTPMethod",
+                        "usr": "s:18GGNetworkFramework10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18GGNetworkFramework10HTTPMethodO4postyA2CmF",
+            "mangledName": "$s18GGNetworkFramework10HTTPMethodO4postyA2CmF",
+            "moduleName": "GGNetworkFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "get",
+            "printedName": "get",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GGNetworkFramework.HTTPMethod.Type) -> GGNetworkFramework.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "GGNetworkFramework.HTTPMethod",
+                    "usr": "s:18GGNetworkFramework10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GGNetworkFramework.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "GGNetworkFramework.HTTPMethod",
+                        "usr": "s:18GGNetworkFramework10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18GGNetworkFramework10HTTPMethodO3getyA2CmF",
+            "mangledName": "$s18GGNetworkFramework10HTTPMethodO3getyA2CmF",
+            "moduleName": "GGNetworkFramework"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GGNetworkFramework.HTTPMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "GGNetworkFramework.HTTPMethod",
+                    "usr": "s:18GGNetworkFramework10HTTPMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18GGNetworkFramework10HTTPMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s18GGNetworkFramework10HTTPMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "GGNetworkFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18GGNetworkFramework10HTTPMethodO8rawValueSSvp",
+            "mangledName": "$s18GGNetworkFramework10HTTPMethodO8rawValueSSvp",
+            "moduleName": "GGNetworkFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework10HTTPMethodO8rawValueSSvg",
+                "mangledName": "$s18GGNetworkFramework10HTTPMethodO8rawValueSSvg",
+                "moduleName": "GGNetworkFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18GGNetworkFramework10HTTPMethodO",
+        "mangledName": "$s18GGNetworkFramework10HTTPMethodO",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIResponse",
+        "printedName": "APIResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0> (GGNetworkFramework.APIResponse<τ_0_0>.Type) -> (τ_0_0) -> GGNetworkFramework.APIResponse<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0) -> GGNetworkFramework.APIResponse<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIResponse",
+                        "printedName": "GGNetworkFramework.APIResponse<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:18GGNetworkFramework11APIResponseO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GGNetworkFramework.APIResponse<τ_0_0>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIResponse",
+                        "printedName": "GGNetworkFramework.APIResponse<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:18GGNetworkFramework11APIResponseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18GGNetworkFramework11APIResponseO7successyACyxGxcAEmlF",
+            "mangledName": "$s18GGNetworkFramework11APIResponseO7successyACyxGxcAEmlF",
+            "moduleName": "GGNetworkFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0> (GGNetworkFramework.APIResponse<τ_0_0>.Type) -> (GGNetworkFramework.NetworkError) -> GGNetworkFramework.APIResponse<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GGNetworkFramework.NetworkError) -> GGNetworkFramework.APIResponse<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIResponse",
+                        "printedName": "GGNetworkFramework.APIResponse<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:18GGNetworkFramework11APIResponseO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "GGNetworkFramework.NetworkError",
+                        "usr": "s:18GGNetworkFramework12NetworkErrorO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GGNetworkFramework.APIResponse<τ_0_0>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIResponse",
+                        "printedName": "GGNetworkFramework.APIResponse<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:18GGNetworkFramework11APIResponseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18GGNetworkFramework11APIResponseO7failureyACyxGAA12NetworkErrorOcAEmlF",
+            "mangledName": "$s18GGNetworkFramework11APIResponseO7failureyACyxGAA12NetworkErrorOcAEmlF",
+            "moduleName": "GGNetworkFramework"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18GGNetworkFramework11APIResponseO",
+        "mangledName": "$s18GGNetworkFramework11APIResponseO",
+        "moduleName": "GGNetworkFramework",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unauthorized",
+            "printedName": "unauthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GGNetworkFramework.NetworkError.Type) -> GGNetworkFramework.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "GGNetworkFramework.NetworkError",
+                    "usr": "s:18GGNetworkFramework12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GGNetworkFramework.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "GGNetworkFramework.NetworkError",
+                        "usr": "s:18GGNetworkFramework12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18GGNetworkFramework12NetworkErrorO12unauthorizedyA2CmF",
+            "mangledName": "$s18GGNetworkFramework12NetworkErrorO12unauthorizedyA2CmF",
+            "moduleName": "GGNetworkFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GGNetworkFramework.NetworkError.Type) -> GGNetworkFramework.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "GGNetworkFramework.NetworkError",
+                    "usr": "s:18GGNetworkFramework12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GGNetworkFramework.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "GGNetworkFramework.NetworkError",
+                        "usr": "s:18GGNetworkFramework12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18GGNetworkFramework12NetworkErrorO7unknownyA2CmF",
+            "mangledName": "$s18GGNetworkFramework12NetworkErrorO7unknownyA2CmF",
+            "moduleName": "GGNetworkFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "noJSONData",
+            "printedName": "noJSONData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GGNetworkFramework.NetworkError.Type) -> GGNetworkFramework.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "GGNetworkFramework.NetworkError",
+                    "usr": "s:18GGNetworkFramework12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GGNetworkFramework.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "GGNetworkFramework.NetworkError",
+                        "usr": "s:18GGNetworkFramework12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18GGNetworkFramework12NetworkErrorO10noJSONDatayA2CmF",
+            "mangledName": "$s18GGNetworkFramework12NetworkErrorO10noJSONDatayA2CmF",
+            "moduleName": "GGNetworkFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "JSONDecoder",
+            "printedName": "JSONDecoder",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GGNetworkFramework.NetworkError.Type) -> GGNetworkFramework.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "GGNetworkFramework.NetworkError",
+                    "usr": "s:18GGNetworkFramework12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GGNetworkFramework.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "GGNetworkFramework.NetworkError",
+                        "usr": "s:18GGNetworkFramework12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18GGNetworkFramework12NetworkErrorO11JSONDecoderyA2CmF",
+            "mangledName": "$s18GGNetworkFramework12NetworkErrorO11JSONDecoderyA2CmF",
+            "moduleName": "GGNetworkFramework"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "GGNetworkFramework.NetworkError",
+                "usr": "s:18GGNetworkFramework12NetworkErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "GGNetworkFramework.NetworkError",
+                "usr": "s:18GGNetworkFramework12NetworkErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18GGNetworkFramework12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18GGNetworkFramework12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "GGNetworkFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18GGNetworkFramework12NetworkErrorO9hashValueSivp",
+            "mangledName": "$s18GGNetworkFramework12NetworkErrorO9hashValueSivp",
+            "moduleName": "GGNetworkFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18GGNetworkFramework12NetworkErrorO9hashValueSivg",
+                "mangledName": "$s18GGNetworkFramework12NetworkErrorO9hashValueSivg",
+                "moduleName": "GGNetworkFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18GGNetworkFramework12NetworkErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18GGNetworkFramework12NetworkErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "GGNetworkFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18GGNetworkFramework12NetworkErrorO",
+        "mangledName": "$s18GGNetworkFramework12NetworkErrorO",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GGNetworkFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(request:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12NSURLSessionC18GGNetworkFrameworkE8dataTask7request17completionHandlerSo0a4DataE0C10Foundation10URLRequestV_yAI0I0VSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$sSo12NSURLSessionC18GGNetworkFrameworkE8dataTask7request17completionHandlerSo0a4DataE0C10Foundation10URLRequestV_yAI0I0VSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "GGNetworkFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "URLSessionProtocol",
+            "printedName": "URLSessionProtocol",
+            "usr": "s:18GGNetworkFramework18URLSessionProtocolP",
+            "mangledName": "$s18GGNetworkFramework18URLSessionProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLRequest",
+        "printedName": "URLRequest",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(service:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Service",
+                "printedName": "GGNetworkFramework.Service",
+                "usr": "s:18GGNetworkFramework7ServiceP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10Foundation10URLRequestV18GGNetworkFrameworkE7serviceAcD7Service_p_tcfc",
+            "mangledName": "$s10Foundation10URLRequestV18GGNetworkFrameworkE7serviceAcD7Service_p_tcfc",
+            "moduleName": "GGNetworkFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation10URLRequestV",
+        "mangledName": "$s10Foundation10URLRequestV",
+        "moduleName": "Foundation",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURLRequest",
+                    "printedName": "Foundation.NSURLRequest",
+                    "usr": "c:objc(cs)NSURLRequest"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURLRequest",
+                    "printedName": "Foundation.NSURLRequest",
+                    "usr": "c:objc(cs)NSURLRequest"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLComponents",
+        "printedName": "URLComponents",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(service:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLComponents",
+                "printedName": "Foundation.URLComponents",
+                "usr": "s:10Foundation13URLComponentsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Service",
+                "printedName": "GGNetworkFramework.Service",
+                "usr": "s:18GGNetworkFramework7ServiceP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10Foundation13URLComponentsV18GGNetworkFrameworkE7serviceAcD7Service_p_tcfc",
+            "mangledName": "$s10Foundation13URLComponentsV18GGNetworkFrameworkE7serviceAcD7Service_p_tcfc",
+            "moduleName": "GGNetworkFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation13URLComponentsV",
+        "mangledName": "$s10Foundation13URLComponentsV",
+        "moduleName": "Foundation",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURLComponents",
+                    "printedName": "Foundation.NSURLComponents",
+                    "usr": "c:objc(cs)NSURLComponents"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURLComponents",
+                    "printedName": "Foundation.NSURLComponents",
+                    "usr": "c:objc(cs)NSURLComponents"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/tapashmollick\/Documents\/GGX\/FrameworkTestDemo\/GGNETWORKFRAMEWORK\/GGNetworkFramework\/GGNetworkFramework\/APIManager.swift",
+      "kind": "Array",
+      "offset": 6416,
+      "length": 166,
+      "value": "[0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x0f, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/tapashmollick\/Documents\/GGX\/FrameworkTestDemo\/GGNETWORKFRAMEWORK\/GGNetworkFramework\/GGNetworkFramework\/APIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5321,
+      "length": 27,
+      "value": "\"GGNetworkFramework.NSURLSessionPinningDelegate\""
+    },
+    {
+      "filePath": "\/Users\/tapashmollick\/Documents\/GGX\/FrameworkTestDemo\/GGNETWORKFRAMEWORK\/GGNetworkFramework\/GGNetworkFramework\/NetworkEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 168,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/tapashmollick\/Documents\/GGX\/FrameworkTestDemo\/GGNETWORKFRAMEWORK\/GGNetworkFramework\/GGNetworkFramework\/NetworkEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 190,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/tapashmollick\/Documents\/GGX\/FrameworkTestDemo\/GGNETWORKFRAMEWORK\/GGNetworkFramework\/GGNetworkFramework\/NetworkEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 168,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/tapashmollick\/Documents\/GGX\/FrameworkTestDemo\/GGNETWORKFRAMEWORK\/GGNetworkFramework\/GGNetworkFramework\/NetworkEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 190,
+      "length": 5,
+      "value": "\"GET\""
+    }
+  ]
+}

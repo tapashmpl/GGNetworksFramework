@@ -1,0 +1,11 @@
+framework module GGNetworkFramework {
+  umbrella header "GGNetworkFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module GGNetworkFramework.Swift {
+  header "GGNetworkFramework-Swift.h"
+  requires objc
+}

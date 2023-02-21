@@ -1,0 +1,71 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GGNetworkFramework
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CommonCrypto
+import Foundation
+@_exported import GGNetworkFramework
+import Security
+import Swift
+import _Concurrency
+import _StringProcessing
+public protocol URLSessionProtocol {
+  func dataTask(request: Foundation.URLRequest, completionHandler: @escaping GGNetworkFramework.DataTaskResult) -> Foundation.URLSessionDataTask
+}
+extension Foundation.URLSession : GGNetworkFramework.URLSessionProtocol {
+  public func dataTask(request: Foundation.URLRequest, completionHandler: @escaping GGNetworkFramework.DataTaskResult) -> Foundation.URLSessionDataTask
+}
+public protocol Service {
+  var baseURL: Foundation.URL { get }
+  var path: Swift.String { get }
+  var method: GGNetworkFramework.HTTPMethod { get }
+  var headers: GGNetworkFramework.RequestHeaders? { get }
+  var parameters: GGNetworkFramework.Params { get }
+  var urlQueryItems: [Foundation.URLQueryItem]? { get }
+  var mediaData: Foundation.Data? { get set }
+}
+open class APIManager {
+  public init(session: Foundation.URLSession = URLSession.shared)
+  public init(sessionConfiguration: Foundation.URLSessionConfiguration, pinnedCertificateHash: Swift.String? = nil, pinnedPublicKeyHash: Swift.String? = nil)
+  open func request(service: GGNetworkFramework.Service, completion: @escaping (Foundation.Data?, Foundation.HTTPURLResponse?, Swift.Error?) -> ())
+  open func requestData(service: GGNetworkFramework.Service, completion: @escaping (Any?, Foundation.Data?, Swift.Error?) -> ())
+  @objc deinit
+}
+extension Foundation.URLRequest {
+  public init(service: GGNetworkFramework.Service)
+}
+public enum HTTPMethod : Swift.String {
+  case post
+  case get
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum APIResponse<T> {
+  case success(T)
+  case failure(GGNetworkFramework.NetworkError)
+}
+public enum NetworkError {
+  case unauthorized
+  case unknown
+  case noJSONData
+  case JSONDecoder
+  public static func == (a: GGNetworkFramework.NetworkError, b: GGNetworkFramework.NetworkError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias RequestHeaders = [Swift.String : Swift.String]?
+public typealias Params = [Swift.String : Any]?
+public typealias DataTaskResult = (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> ()
+extension Foundation.URLComponents {
+  public init(service: GGNetworkFramework.Service)
+}
+extension GGNetworkFramework.HTTPMethod : Swift.Equatable {}
+extension GGNetworkFramework.HTTPMethod : Swift.Hashable {}
+extension GGNetworkFramework.HTTPMethod : Swift.RawRepresentable {}
+extension GGNetworkFramework.NetworkError : Swift.Equatable {}
+extension GGNetworkFramework.NetworkError : Swift.Hashable {}
