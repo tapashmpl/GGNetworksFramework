@@ -67,15 +67,14 @@ end
 
 ### Installation
 
-1. 
 
-2. Clone the repo
+1. Clone the repo
 
 ```sh
 git clone https://github.com/tapashmpl/GGNetworksFramework.git
 ```
 
-3. Install NPM packages
+2. Install pod
 
 ```sh
 pod install / arch -x86_64 pod install
